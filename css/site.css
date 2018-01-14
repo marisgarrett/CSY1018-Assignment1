@@ -1,5 +1,4 @@
 /*Apply the font family to the body elements contents*/
-
 body {
     margin: 0;
     font-family: 'Roboto', serif;
@@ -7,7 +6,6 @@ body {
 
 
 /* Apply padding above and below a horizontal line */
-
 hr {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -15,7 +13,6 @@ hr {
 
 
 /* Set the styles of the text input element for the contact us form */
-
 input[type=text] {
     border-top: none;
     border-left: none;
@@ -29,21 +26,18 @@ input[type=text] {
 
 
 /* When an input element is focussed do not apply an outline */
-
 input:focus {
     outline: none;
 }
 
 
 /* When a button is hovered over turn the cursor into a hand to show it is a clickable item */
-
 input[type=submit]:hover {
     cursor: pointer;
 }
 
 
 /* Set the styles of the multiline textarea element for the contact us form */
-
 textarea {
     border-top: none;
     border-left: none;
@@ -78,7 +72,8 @@ textarea:focus {
 
 .container {
     margin-left: 25px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     z-index: 2;
 }
 
@@ -249,19 +244,26 @@ footer p {
 
 .team-container {
     margin-top: 50px;
-    display: block;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
+img {
+    object-fit: contain;
+    align-self: flex-start;
+}
 
 /* Ensure that the team member image doesn't grow too large and distort */
 
 .team-members .team-member img {
     width: 80%;
+    object-fit: contain;
 }
 
 .team-photo {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -269,7 +271,7 @@ footer p {
 
 .team-photo img {
     width: 90%;
-    margin-left: 4%
+    object-fit: contain;
 }
 
 
@@ -279,14 +281,29 @@ footer p {
     .team-members .team-member img {
         width: 30%;
     }
+
+    .team-members .team-member div:not(.bio) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .team-members .team-member div.bio {
+        width: 65%;
+    }
 }
 
 
 /* Style for the team page for a larger browser */
 
 @media(min-width: 840px) {
+    .team-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
     .team-photo {
-        display: inline-block;
+        display: flex;
         width: 60%;
     }
     .team-photo img {
@@ -294,21 +311,16 @@ footer p {
     }
     .team-members {
         width: 35%;
-        float: right;
+        display: flex;
+        flex-direction: column;
     }
     .team-members .team-member {
-        clear: both;
         padding-top: 5px;
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .team-members .team-member img {
         width: 30%;
-        margin-right: 5%;
-        float: left;
-    }
-    .team-members .team-member div.bio {
-        width: 55%;
-        float: right;
     }
 }
 
@@ -336,29 +348,26 @@ table.glossary {
 }
 
 .jobs {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .jobs>.column {
-    display: block;
-    padding: 0 10%;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media(min-width: 840px) {
+    .jobs {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
     .jobs>.column {
         display: inline-block;
         width: 30%;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 25px;
-        padding: 0;
-    }
-    .jobs>.column:first-child {
-        margin-left: 2%;
-    }
-    .jobs>.column:last-child {
-        margin-right: 2%;
     }
     .jobs>.column>h4 {
         text-align: center;
