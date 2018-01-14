@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <title>Meet the Team</title>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="mobile-menu-toggle" onclick="toggleMenu()">
+            <a href="#">
+                <span class="fas fa-bars"></span>
+            </a>
+        </div>
+        <div class="navbar-fixed">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="GoodPractice.html">Good Practice</a>
+                    </li>
+                    <li>
+                        <a href="Glossary.html">Glossary</a>
+                    </li>
+                    <li>
+                        <a href="Jobs.html">Jobs</a>
+                    </li>
+                    <li>
+                        <a href="Reflection.html">Reflection</a>
+                    </li>
+                    <li>
+                        <a href="Resources.html">Resources</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <div class="team-container">
+                <div class="team-photo">
+                    <h2>Meet the Team</h2>
+                    <p>PUT SOME TEXT IN HERE</p>
+                    <img src="images/Team.jpg" alt="Team Photo">
+                </div>
+                <div class="team-members">
+                    <div class="team-member">
+                        <h3>NAME</h3>
+                        <img src="images/maris.jpg" alt="Maris Garrett">
+                        <div class="bio">
+                            Something about the team member here
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <h3>NAME</h3>
+                        <img src="images/andrei.jpg" alt="Andrei Nicolae Pa&#774;un">
+                        <div class="bio">
+                            Something about the team member here
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <h3>NAME</h3>
+                        <img src="images/faraz.jpg" alt="Faraz Khalid">
+                        <div class="bio">
+                            Something about the team member here
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <hr />
+
+            <div class="design-research">
+                <h2>Design Research</h2>
+                <p>TEXT IN HERE</p>
+                <video width="320" height="240" controls>
+                    <source src="videos/VideoName.mp4" type="video/mp4"> You browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+        <section>
+            <hr />
+
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <p>Got a question, complete the form below and send it to us and we'll get back to you as soon as possible</p>
+                <form method="post" action="mailto:maris.garrett@hotmail.com">
+                    <label for="firstName">First Name:</label>
+                    <br />
+                    <input type="text" id="firstName" />
+                    <br />
+                    <br />
+                    <label for="lastName">Last Name:</label>
+                    <br />
+                    <input type="text" id="lastName" />
+                    <br />
+                    <br />
+                    <label for="question">Question:</label>
+                    <br />
+                    <textarea rows="5" id="question"></textarea>
+                    <br />
+                    <br />
+                    <input class="btn" type="submit" value="Submit" />
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; Maris Garrett</p>
+    </footer>
+
+    <script src="scripts/site.js"></script>
+</body>
+
+</html>

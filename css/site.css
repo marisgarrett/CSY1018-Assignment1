@@ -1,0 +1,287 @@
+body{
+    margin: 0;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+input[type=text] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #009688;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2em;
+    width: 400px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #009688;
+    font-size: 1.2em;
+    resize: none;
+    width: 400px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #009688;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.container {
+    margin-left: 25px;
+    display: block;
+    z-index: 2;
+}
+
+header {
+    height: 50px;
+    background-color: #4527A0;
+    display: block;
+}
+
+header .mobile-menu-toggle a {
+    margin-left: 25px;
+    height: 50px;
+    display: inline-block;
+}
+
+header .mobile-menu-toggle a:hover,
+header .mobile-menu-toggle a:active {
+    background-color:    #673AB7;
+}
+
+header .mobile-menu-toggle a .fas {
+    line-height: 50px;
+    width: 50px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+}
+
+header .mobile-menu-toggle a .fas {
+    line-height: 50px;
+}
+
+.navbar-fixed {
+    background-color: #4527A0;
+    height: 100vh;
+    z-index: 1;
+    width: 80%;
+    padding-top: 1px;
+    display: none;
+    position: relative;
+}
+
+.navbar-fixed.active {
+display: block;
+}
+
+.navbar-fixed nav {
+    height: 100%;
+}
+
+.navbar-fixed nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar-fixed nav ul li {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.navbar-fixed nav ul li:hover,
+.navbar-fixed nav ul li:active {
+    background-color:    #673AB7;
+}
+
+.navbar-fixed nav ul li a {
+    color: #fff;
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-left: 25px;
+}
+
+@media(min-width: 840px) {
+    header .mobile-menu-toggle {
+        display: none;
+    }
+
+    .navbar-fixed {
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .navbar-fixed nav {
+        height: 50px;
+        background-color: #4527A0;
+    }
+    
+    .navbar-fixed nav ul {
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        overflow: hidden;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    .navbar-fixed nav ul li {
+        float: left;
+        padding: 0 10px;
+        height: 50px;
+    }
+    
+    .navbar-fixed nav ul li a {
+        padding-left: 0;
+    }
+    
+    .navbar-fixed nav ul li a .fas {
+        line-height: 50px;
+    }
+    
+    
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #4527A0;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #fff;
+    text-align: right;
+    padding-right: 25px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.team-container {
+    margin-top: 50px;
+    display: block;
+    position: relative;
+}
+
+.team-photo {
+    display: block;
+}
+
+.team-photo img {
+    width: 90%;
+    margin-left: 4%
+}
+
+@media(min-width: 840px) {
+    .team-photo {
+        display: inline-block;
+        width: 60%;
+    }
+
+    .team-photo img {
+        width: 90%;
+    }
+
+    .team-members {
+        width: 35%;
+        float: right;
+    }
+
+    .team-members .team-member {
+        clear: both;
+        padding-top: 5px;
+        display: block;
+    }
+    
+    .team-members .team-member img {
+        width: 30%;
+        margin-right: 5%;
+        float: left;
+    }
+    
+    .team-members .team-member div.bio {
+        width: 55%;
+        float: right;
+    }
+}
+
+table.glossary {
+    margin-top: 30px;
+}
+
+.glossary thead tr th {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.glossary thead tr th:first-of-type {
+    padding-right: 40px;
+}
+
+.container.jobs {
+    margin-left: 0;
+}
+
+.jobs {
+    display: block;
+}
+
+.jobs > .column {
+    display: block;
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+@media(min-width: 840px) {
+    .jobs > .column {
+        display: inline-block;
+        width: 30%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 25px;
+        padding: 0;
+    }
+    
+    .jobs > .column:first-child {
+        margin-left: 2%;
+    }
+    
+    .jobs > .column:last-child {
+        margin-right: 2%;
+    }
+
+    .jobs > .column > h4 {
+        text-align: center;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
