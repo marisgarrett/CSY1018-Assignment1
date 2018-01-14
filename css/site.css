@@ -316,19 +316,19 @@ table.glossary {
     margin-top: 30px;
 }
 
-
 /* Set the font size for the glossary */
-
 .glossary thead tr th {
     font-size: 1.2em;
     text-align: left;
 }
 
-
 /* Styles for the first table cell of each row */
-
 .glossary thead tr th:first-of-type {
     padding-right: 40px;
+}
+
+.glossary tbody tr {
+    height: 35px;
 }
 
 .container.jobs {
@@ -370,4 +370,9 @@ table.glossary {
 
 .text-center {
     text-align: center;
+}
+
+.row {
+    padding-left: 20px;
+    padding-right: 20px;
 }
