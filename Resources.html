@@ -1,5 +1,7 @@
+<!--Set the page to use HTML5-->
 <!DOCTYPE html>
 
+<!--Set the language of the page-->
 <html lang="en">
 
 <head>
@@ -7,17 +9,30 @@
 
     <title>Resources</title>
 
+    <!--Link to the font awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
+    
+    <!--
+        Used Google Fonts API to add a font to the wesbite. Reference information can be found here:
+        https://developers.google.com/fonts/docs/getting_started
+    -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:regular" rel="stylesheet" />
+    
+    <!--Link to my sites CSS-->
     <link href="css/site.css" rel="stylesheet">
 </head>
 
 <body>
+    <!--Header section containing the navigation menu-->
     <header>
+        <!--Menu for using when on a mobile device only-->
         <div class="mobile-menu-toggle" onclick="toggleMenu()">
             <a href="#">
                 <span class="fas fa-bars"></span>
             </a>
         </div>
+
+        <!--Main menu for use on all devices, it changes how it is displayed based on the screen size-->
         <div class="navbar-fixed">
             <nav>
                 <ul>
@@ -44,6 +59,9 @@
         </div>
     </header>
 
+    <!--
+        This div uses a container class to restrict the "useable" area of the page. This is a common technique to make content on screens appear with appropriate padding. This idea is used in popular frameworks accross the web such as bootstrap and materializecss.
+    -->
     <div class="container">
         <p>
             This page contains useful resources and information about how to learn HTML, CSS and design.
@@ -106,10 +124,12 @@
         </div>
     </div>
 
+    <!--A HTML5 footer element containing copyright information-->
     <footer>
         <p>&copy; Maris Garrett</p>
     </footer>
 
+    <!--A link to the websites javascript to allow the mobile menu to function-->
     <script src="scripts/site.js"></script>
 </body>
 

@@ -1,12 +1,16 @@
+/*Apply the font family to the body elements contents*/
 body{
     margin: 0;
+    font-family: 'Roboto', serif;
 }
 
+/* Apply padding above and below a horizontal line */
 hr {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
+/* Set the styles of the text input element for the contact us form */
 input[type=text] {
     border-top: none;
     border-left: none;
@@ -18,14 +22,17 @@ input[type=text] {
     width: 400px;
 }
 
+/* When an input element is focussed do not apply an outline */
 input:focus {
     outline: none;
 }
 
+/* When a button is hovered over turn the cursor into a hand to show it is a clickable item */
 input[type=submit]:hover {
     cursor: pointer;
 }
 
+/* Set the styles of the multiline textarea element for the contact us form */
 textarea {
     border-top: none;
     border-left: none;
@@ -36,10 +43,12 @@ textarea {
     width: 400px;
 }
 
+/* When the textarea element is focussed do not apply an outline */
 textarea:focus {
     outline: none;
 }
 
+/* Make a class that represents the style rules for a button */
 .btn {
     padding: 10px 15px;
     border: none;
@@ -49,29 +58,34 @@ textarea:focus {
     border-radius: 5px;
 }
 
+/* Create the container element */
 .container {
     margin-left: 25px;
     display: block;
     z-index: 2;
 }
 
+/* Set the header element style rules including the background colour for the menu */
 header {
     height: 50px;
     background-color: #4527A0;
     display: block;
 }
 
+/* Set the details for the mobile menu toggle element */
 header .mobile-menu-toggle a {
     margin-left: 25px;
     height: 50px;
     display: inline-block;
 }
 
+/* When you hover over a link change the background colour of the element. This creates the hover effect of the menu items */
 header .mobile-menu-toggle a:hover,
 header .mobile-menu-toggle a:active {
     background-color:    #673AB7;
 }
 
+/* This updates the font awesome icon library to allow the icon to fit into the bar as expected */
 header .mobile-menu-toggle a .fas {
     line-height: 50px;
     width: 50px;
@@ -80,10 +94,7 @@ header .mobile-menu-toggle a .fas {
     text-align: center;
 }
 
-header .mobile-menu-toggle a .fas {
-    line-height: 50px;
-}
-
+/* Set the navbar as a fixed element at the top of the page */
 .navbar-fixed {
     background-color: #4527A0;
     height: 100vh;
@@ -94,30 +105,31 @@ header .mobile-menu-toggle a .fas {
     position: relative;
 }
 
-.navbar-fixed.active {
-display: block;
-}
-
+/* Ensure the navbar fills the header area */
 .navbar-fixed nav {
     height: 100%;
 }
 
+/* Remove the bullet points from the list items so that the list appears more like a menu */
 .navbar-fixed nav ul {
     list-style: none;
     padding-left: 0;
 }
 
+/* Set a fixed height item for the menu items */
 .navbar-fixed nav ul li {
     display: block;
     height: 50px;
     line-height: 50px;
 }
 
+/* Set the hover colour for the menu items */
 .navbar-fixed nav ul li:hover,
 .navbar-fixed nav ul li:active {
     background-color:    #673AB7;
 }
 
+/* Set the styling for the menu items links */
 .navbar-fixed nav ul li a {
     color: #fff;
     display: block;
@@ -127,11 +139,14 @@ display: block;
     padding-left: 25px;
 }
 
+/* Set the styles that are different for the larger devices. These will be applied to any screen with a width of 840px or more */
 @media(min-width: 840px) {
+    /* Hide the mobile menu toggle */
     header .mobile-menu-toggle {
         display: none;
     }
 
+    /* Allow the hieght to change to fit the items in */
     .navbar-fixed {
         display: block;
         height: auto;
@@ -143,6 +158,7 @@ display: block;
         background-color: #4527A0;
     }
     
+    /* Set a margin that spaces the elements out within the menu */
     .navbar-fixed nav ul {
         list-style-type: none;
         margin:0;
@@ -165,10 +181,9 @@ display: block;
     .navbar-fixed nav ul li a .fas {
         line-height: 50px;
     }
-    
-    
 }
 
+/* Setting a fixed height and background colour for the footer */
 footer {
     height: 50px;
     width: 100%;
@@ -176,6 +191,7 @@ footer {
     margin-top: 50px;
 }
 
+/* Set the text colour of the footer contents */
 footer p {
     color: #fff;
     text-align: right;
@@ -184,21 +200,36 @@ footer p {
     margin: 0;
 }
 
+/* rules for the team members area of the index page */
 .team-container {
     margin-top: 50px;
     display: block;
     position: relative;
 }
 
+/* Ensure that the team member image doesn't grow too large and distort */
+.team-members .team-member img {
+    width: 80%;
+}
+
 .team-photo {
     display: block;
 }
 
+/* Ensure that the team photo doesn't grow too large */
 .team-photo img {
     width: 90%;
     margin-left: 4%
 }
 
+/* Styles for the team member image widths for a slightly larger screen size */
+@media(min-width: 601px) {
+    .team-members .team-member img {
+        width: 30%;
+    }
+}
+
+/* Style for the team page for a larger browser */
 @media(min-width: 840px) {
     .team-photo {
         display: inline-block;
@@ -236,11 +267,13 @@ table.glossary {
     margin-top: 30px;
 }
 
+/* Set the font size for the glossary */
 .glossary thead tr th {
     font-size: 1.2em;
     text-align: left;
 }
 
+/* Styles for the first table cell of each row */
 .glossary thead tr th:first-of-type {
     padding-right: 40px;
 }
@@ -282,6 +315,7 @@ table.glossary {
     }
 }
 
+/* A class that can be used to center text */
 .text-center {
     text-align: center;
 }
